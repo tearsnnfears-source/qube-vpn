@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>QUBE VPN - Your internet, your route</title>
+    <meta
+      name="description"
+      content="QUBE VPN is a playful, privacy-focused VPN for streaming, travel, and everyday online freedom."
+    />
+    <link rel="preload" href="styles.css" as="style" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="assets/qube-wordmark.png" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="QUBE VPN home">
+        <img src="assets/qube-wordmark.png" alt="QUBE" />
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" data-menu-toggle>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" data-nav aria-label="Primary navigation">
+        <a href="#features">Features</a>
+        <a href="#servers">Servers</a>
+        <a href="#what-is-vpn">What is VPN?</a>
+        <a href="#blog">Blog</a>
+        <a href="#pricing">Pricing</a>
+        <a class="nav-dropdown" href="#apps">VPN Apps</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="header-button" href="#pricing">Get QUBE VPN</a>
+        <a class="login-link" href="#login">Log in</a>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <h1 id="hero-title">
+              <span>Your content.</span>
+              <span>Your internet.</span>
+              <span>Your route.</span>
+              <span>Your QUBE VPN.</span>
+            </h1>
+
+            <p>
+              Multi-platform VPN for streaming, travel, and everyday privacy.
+              Protection for as low as per month.
+            </p>
+
+            <a class="hero-button" href="#pricing">Get QUBE VPN now</a>
+
+            <p class="guarantee">
+              <span aria-hidden="true">☆</span>
+              7-day trial. Cancel anytime.
+            </p>
+          </div>
+
+          <div class="hero-stickers" aria-label="QUBE stickers">
+            <img class="hero-sticker-image" src="assets/qube-hero-sticker-crop.png" alt="QUBE cube mascot with route and shield" />
+          </div>
+        </div>
+      </section>
+
+      <section class="device-section" id="features" aria-labelledby="device-title">
+        <div class="device-copy">
+          <h2 id="device-title">Any device, any time, any place</h2>
+          <p>
+            Mac for work, Windows for games, iPhone on the move, Android at home - QUBE
+            does not care what you use. One tap protects your connection, keeps your
+            route private, and covers up to 5 different devices.
+          </p>
+        </div>
+
+        <div class="device-stage" aria-label="QUBE apps and stickers">
+          <div class="laptop">
+            <div class="screen">
+              <span class="screen-dot"></span>
+              <span class="screen-line wide"></span>
+              <span class="screen-line"></span>
+              <span class="country-row"></span>
+              <span class="country-row"></span>
+              <span class="country-row"></span>
+            </div>
+            <div class="keyboard"></div>
+          </div>
+
+          <div class="phone">
+            <div class="phone-face">
+              <svg viewBox="0 0 120 120" aria-hidden="true">
+                <path d="M40 24h44l22 31-46 45-46-45 26-31Z" />
+                <path d="M41 57c12-15 29-15 40 0" />
+                <path d="M42 72c12 13 28 13 39 0" />
+              </svg>
+              <span>tap</span>
+            </div>
+          </div>
+
+          <svg class="mini-sticker mini-left" viewBox="0 0 170 220" aria-hidden="true">
+            <path d="M58 34h70l30 46-40 104H44L13 80l45-46Z" />
+            <path d="M50 101c19-19 42-19 61 0" />
+            <path d="M55 130c15 12 34 12 50 0" />
+            <path d="M28 181 8 210" />
+          </svg>
+
+          <svg class="mini-sticker mini-right" viewBox="0 0 170 220" aria-hidden="true">
+            <path d="M32 37h96l24 84-61 74-70-63 11-95Z" />
+            <path d="M45 102c18-18 39-18 57 0" />
+            <path d="M48 136c23 14 46 10 69-12" />
+            <path d="M116 180 160 210" />
+          </svg>
+        </div>
+      </section>
+    </main>
+
+    <aside class="ip-widget" aria-label="Connection status">
+      <button type="button" aria-label="Close status widget" data-close-widget>×</button>
+      <div>
+        <strong>Your IP: 0.0.0.0</strong>
+        <span>ISP: ISP</span>
+        <span>Your Status: <mark>Unprotected</mark></span>
+      </div>
+      <svg viewBox="0 0 160 130" aria-hidden="true">
+        <path d="M52 31h64l30 43-34 42H50L15 74l37-43Z" />
+        <path d="M46 76c16-15 36-15 52 0" />
+        <path d="M47 96c20 10 41 8 60-8" />
+        <path d="M18 26 2 12M30 17 20 0M126 28l24-18" />
+      </svg>
+    </aside>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>

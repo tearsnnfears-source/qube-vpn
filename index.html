@@ -1,139 +1,329 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>QUBE VPN - Your internet, your route</title>
-    <meta
-      name="description"
-      content="QUBE VPN is a playful, privacy-focused VPN for streaming, travel, and everyday online freedom."
-    />
-    <link rel="preload" href="styles.css" as="style" />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" href="assets/qube-wordmark.png" />
-  </head>
-  <body>
-    <header class="site-header" data-header>
-      <a class="brand" href="#top" aria-label="QUBE VPN home">
-        <img src="assets/qube-wordmark.png" alt="QUBE" />
-      </a>
+<!DOCTYPE html>
+<html lang="en" data-palette="green"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>QUBE VPN — Your internet, your route</title>
+<meta name="description" content="QUBE VPN is a playful, privacy-first VPN for streaming, travel, and everyday online freedom. One tap, every device.">
+<link rel="preload" href="styles.css" as="style">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="assets/qube-wordmark.png">
 
-      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" data-menu-toggle>
-        <span></span>
-        <span></span>
-      </button>
+</head>
+<body id="top">
 
-      <nav class="site-nav" data-nav aria-label="Primary navigation">
-        <a href="#features">Features</a>
-        <a href="#servers">Servers</a>
-        <a href="#what-is-vpn">What is VPN?</a>
-        <a href="#blog">Blog</a>
-        <a href="#pricing">Pricing</a>
-        <a class="nav-dropdown" href="#apps">VPN Apps</a>
-      </nav>
+<!-- ============================ NAV ============================ -->
+<header class="nav">
+  <div class="wrap nav__inner">
+    <a class="logo" href="#top" aria-label="QUBE VPN home">
+      <span class="logo__cube" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M12 2l8 4.5v9L12 22l-8-6.5v-9L12 2z" stroke="#0C3D22" stroke-width="2" stroke-linejoin="round"></path><path d="M4 6.5L12 11l8-4.5M12 11v11" stroke="#0C3D22" stroke-width="2" stroke-linejoin="round"></path></svg>
+      </span>
+      <span class="logo__word">QUBE</span>
+    </a>
+    <nav class="nav__links">
+      <a href="#features">Features</a>
+      <a href="#servers">Servers</a>
+      <a href="#what">What is a VPN?</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#apps">Apps</a>
+    </nav>
+    <div class="nav__cta">
+      <a class="nav__login" href="#">Log in</a>
+      <a class="btn btn--primary" href="#pricing">Get QUBE</a>
+    </div>
+  </div>
+</header>
 
-      <div class="header-actions">
-        <a class="header-button" href="#pricing">Get QUBE VPN</a>
-        <a class="login-link" href="#login">Log in</a>
+<!-- ============================ HERO ============================ -->
+<section class="hero" data-screen-label="Hero">
+  <div class="wrap hero__grid">
+    <div class="hero__copy">
+      <span class="eyebrow">Privacy that travels with you</span>
+      <h1>Your content.<br>Your internet.<br><span class="hl">Your route.</span></h1>
+      <p class="hero__sub">A playful, multi-platform VPN for streaming, travel, and everyday privacy. <b>One tap</b> and your connection is yours again — on up to 5 devices.</p>
+      <div class="hero__actions">
+        <a class="btn btn--primary btn--lg" href="#pricing">Get QUBE VPN now</a>
+        <a class="btn btn--ghost btn--lg" href="#what">How it works</a>
       </div>
-    </header>
+      <span class="hero__trial">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M12 3l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9 6.8 19.2l1-5.8L3.5 9.2l5.9-.9L12 3z" fill="var(--yellow)" stroke="var(--line)" stroke-width="1.6" stroke-linejoin="round"></path></svg>
+        7-day free trial · cancel anytime
+      </span>
+    </div>
+    <div class="hero__art">
+      <div class="hero__backplate"></div>
+      <img class="hero__mascot" src="assets/qube-hero-sticker-crop.png" alt="QUBE cube mascot walking with a location pin and a shield">
+      <div class="chip chip--1"><i style="background:var(--accent)"></i>No-logs</div>
+      <div class="chip chip--2"><i style="background:var(--cyan)"></i>120+ countries</div>
+      <div class="chip chip--3"><i style="background:var(--yellow)"></i>5 devices</div>
+    </div>
+  </div>
+</section>
 
-    <main id="top">
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-inner">
-          <div class="hero-copy">
-            <h1 id="hero-title">
-              <span>Your content.</span>
-              <span>Your internet.</span>
-              <span>Your route.</span>
-              <span>Your QUBE VPN.</span>
-            </h1>
-
-            <p>
-              Multi-platform VPN for streaming, travel, and everyday privacy.
-              Protection for as low as per month.
-            </p>
-
-            <a class="hero-button" href="#pricing">Get QUBE VPN now</a>
-
-            <p class="guarantee">
-              <span aria-hidden="true">☆</span>
-              7-day trial. Cancel anytime.
-            </p>
-          </div>
-
-          <div class="hero-stickers" aria-label="QUBE stickers">
-            <img class="hero-sticker-image" src="assets/qube-hero-sticker-crop.png" alt="QUBE cube mascot with route and shield" />
-          </div>
-        </div>
-      </section>
-
-      <section class="device-section" id="features" aria-labelledby="device-title">
-        <div class="device-copy">
-          <h2 id="device-title">Any device, any time, any place</h2>
-          <p>
-            Mac for work, Windows for games, iPhone on the move, Android at home - QUBE
-            does not care what you use. One tap protects your connection, keeps your
-            route private, and covers up to 5 different devices.
-          </p>
-        </div>
-
-        <div class="device-stage" aria-label="QUBE apps and stickers">
-          <div class="laptop">
-            <div class="screen">
-              <span class="screen-dot"></span>
-              <span class="screen-line wide"></span>
-              <span class="screen-line"></span>
-              <span class="country-row"></span>
-              <span class="country-row"></span>
-              <span class="country-row"></span>
-            </div>
-            <div class="keyboard"></div>
-          </div>
-
-          <div class="phone">
-            <div class="phone-face">
-              <svg viewBox="0 0 120 120" aria-hidden="true">
-                <path d="M40 24h44l22 31-46 45-46-45 26-31Z" />
-                <path d="M41 57c12-15 29-15 40 0" />
-                <path d="M42 72c12 13 28 13 39 0" />
-              </svg>
-              <span>tap</span>
-            </div>
-          </div>
-
-          <svg class="mini-sticker mini-left" viewBox="0 0 170 220" aria-hidden="true">
-            <path d="M58 34h70l30 46-40 104H44L13 80l45-46Z" />
-            <path d="M50 101c19-19 42-19 61 0" />
-            <path d="M55 130c15 12 34 12 50 0" />
-            <path d="M28 181 8 210" />
-          </svg>
-
-          <svg class="mini-sticker mini-right" viewBox="0 0 170 220" aria-hidden="true">
-            <path d="M32 37h96l24 84-61 74-70-63 11-95Z" />
-            <path d="M45 102c18-18 39-18 57 0" />
-            <path d="M48 136c23 14 46 10 69-12" />
-            <path d="M116 180 160 210" />
-          </svg>
-        </div>
-      </section>
-    </main>
-
-    <aside class="ip-widget" aria-label="Connection status">
-      <button type="button" aria-label="Close status widget" data-close-widget>×</button>
-      <div>
-        <strong>Your IP: 0.0.0.0</strong>
-        <span>ISP: ISP</span>
-        <span>Your Status: <mark>Unprotected</mark></span>
+<!-- ===================== CONNECT / DEVICES ===================== -->
+<section class="band band--cream" id="features" data-screen-label="Devices &amp; connect">
+  <div class="wrap connect">
+    <div class="connect__copy">
+      <span class="eyebrow">Any device, any place</span>
+      <h2>Mac for work. Phone on the move. QUBE on all of them.</h2>
+      <p>QUBE doesn't care what you use. One tap protects your connection, hides your route, and keeps you covered across up to 5 devices at once. Tap the shield — watch your status flip.</p>
+      <div class="devstrip">
+        <span>🖥️ macOS</span><span>🪟 Windows</span><span>📱 iOS</span><span>🤖 Android</span><span>🧩 Browser</span>
       </div>
-      <svg viewBox="0 0 160 130" aria-hidden="true">
-        <path d="M52 31h64l30 43-34 42H50L15 74l37-43Z" />
-        <path d="M46 76c16-15 36-15 52 0" />
-        <path d="M47 96c20 10 41 8 60-8" />
-        <path d="M18 26 2 12M30 17 20 0M126 28l24-18" />
-      </svg>
-    </aside>
+    </div>
 
-    <script src="script.js" defer></script>
-  </body>
-</html>
+    <div class="phone" id="phone" data-state="off">
+      <div class="phone__notch"></div>
+      <div class="phone__top">
+        <span>QUBE</span>
+        <span id="phone-clock">9:41</span>
+      </div>
+      <div class="phone__body">
+        <button class="shield-btn" id="connect-btn" aria-label="Toggle VPN connection">
+          <span class="shield-ring"></span>
+          <svg viewBox="0 0 24 24" fill="none"><path d="M12 2.5l7 2.6v6.1c0 4.6-3 8-7 10.3-4-2.3-7-5.7-7-10.3V5.1l7-2.6z" fill="var(--surface)" stroke="var(--line)" stroke-width="1.8" stroke-linejoin="round"></path><path id="shield-check" d="M8.4 12l2.5 2.5 4.7-4.9" stroke="var(--line)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+        </button>
+        <div class="phone__status">
+          <div class="lbl">Status</div>
+          <div class="val" id="status-val">Unprotected</div>
+        </div>
+        <div class="phone__meta">
+          <div><span>Your IP</span><b id="ip-val">31.40.118.7</b></div>
+          <div><span>Location</span><b id="loc-val">Exposed</b></div>
+        </div>
+        <div class="phone__hint" id="phone-hint">Tap the shield to connect</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FEATURES ===================== -->
+<section class="band" data-screen-label="Features">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Why QUBE</span>
+      <h2>Big-league privacy, packed in a friendly little cube.</h2>
+      <p>Everything you'd expect from a serious VPN — wrapped in something that's actually nice to use.</p>
+    </div>
+    <div class="feat-grid">
+      <div class="feat">
+        <div class="feat__icon" style="background:var(--accent)"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2.5l7 2.6v6c0 4.6-3 8.1-7 10.4-4-2.3-7-5.8-7-10.4v-6l7-2.6z" stroke="var(--accent-deep)" stroke-width="1.9" stroke-linejoin="round"></path><path d="M8.5 12l2.4 2.4 4.6-4.8" stroke="var(--accent-deep)" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+        <h3>No-logs, on purpose</h3>
+        <p>We don't track, store, or sell your browsing. Your route stays between you and the cube.</p>
+      </div>
+      <div class="feat">
+        <div class="feat__icon" style="background:var(--cyan)"><svg viewBox="0 0 24 24" fill="none"><path d="M3 12h18M12 3a15 15 0 010 18M12 3a15 15 0 000 18" stroke="var(--line)" stroke-width="1.9"></path><circle cx="12" cy="12" r="9" stroke="var(--line)" stroke-width="1.9"></circle></svg></div>
+        <h3>120+ countries</h3>
+        <p>Hop the globe in a tap. Stream, shop, and read like a local from almost anywhere.</p>
+      </div>
+      <div class="feat">
+        <div class="feat__icon" style="background:var(--yellow)"><svg viewBox="0 0 24 24" fill="none"><path d="M13 2L4 14h6l-1 8 9-12h-6l1-8z" fill="var(--surface)" stroke="var(--line)" stroke-width="1.8" stroke-linejoin="round"></path></svg></div>
+        <h3>Blazing fast</h3>
+        <p>WireGuard®-class speeds with servers tuned for 4K streaming and lag-free calls.</p>
+      </div>
+      <div class="feat">
+        <div class="feat__icon" style="background:var(--lime)"><svg viewBox="0 0 24 24" fill="none"><rect x="4" y="10" width="16" height="11" rx="2.5" stroke="var(--line)" stroke-width="1.9"></rect><path d="M8 10V7a4 4 0 018 0v3" stroke="var(--line)" stroke-width="1.9"></path></svg></div>
+        <h3>Kill switch built in</h3>
+        <p>If the tunnel ever drops, QUBE cuts traffic instantly. No leaks, no surprises.</p>
+      </div>
+      <div class="feat">
+        <div class="feat__icon" style="background:var(--blue)"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2.5" stroke="var(--line)" stroke-width="1.9"></rect><path d="M3 9h18M7 14h5" stroke="var(--line)" stroke-width="1.9"></path></svg></div>
+        <h3>5 devices, 1 account</h3>
+        <p>Laptop, phone, tablet, console, and the spare — all protected on a single plan.</p>
+      </div>
+      <div class="feat">
+        <div class="feat__icon" style="background:var(--purple)"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="var(--line)" stroke-width="1.9"></circle><path d="M12 7v5l3 2" stroke="var(--line)" stroke-width="1.9" stroke-linecap="round"></path></svg></div>
+        <h3>24/7 friendly humans</h3>
+        <p>Real support, any hour, any timezone. No bots pretending to be cubes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SERVER MAP ===================== -->
+<section class="band band--cream" id="servers" data-screen-label="Servers">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Pick a route</span>
+      <h2>120+ locations. Tap a dot, change your world.</h2>
+      <p>Spin up a new identity in a different country in under a second. Choose a server below — the globe follows your lead.</p>
+    </div>
+    <div class="map-wrap">
+      <div class="card map-card">
+        <svg viewBox="0 0 520 420" id="globe" role="img" aria-label="Interactive server globe">
+          <defs>
+            <clipPath id="globeClip"><circle cx="260" cy="210" r="180"></circle></clipPath>
+          </defs>
+          <circle cx="260" cy="210" r="180" fill="color-mix(in srgb, var(--accent) 12%, var(--surface))" stroke="var(--line)" stroke-width="2.5"></circle>
+          <g clip-path="url(#globeClip)" stroke="color-mix(in srgb, var(--line) 22%, transparent)" stroke-width="1.4" fill="none">
+            <ellipse cx="260" cy="210" rx="180" ry="60"></ellipse>
+            <ellipse cx="260" cy="210" rx="180" ry="120"></ellipse>
+            <ellipse cx="260" cy="210" rx="120" ry="180"></ellipse>
+            <ellipse cx="260" cy="210" rx="60" ry="180"></ellipse>
+            <line x1="80" y1="210" x2="440" y2="210"></line>
+            <line x1="260" y1="30" x2="260" y2="390"></line>
+          </g>
+          <line id="route-line" x1="260" y1="210" x2="260" y2="210" stroke="var(--line)" stroke-width="2.5" stroke-dasharray="5 6" opacity="0"></line>
+          <circle cx="260" cy="210" r="6" fill="var(--ink)" stroke="var(--surface)" stroke-width="2"></circle>
+          <g id="dots"></g>
+        </svg>
+        <div class="selected-banner" style="margin-top:18px">
+          <span style="font-size:30px" id="banner-flag">🌍</span>
+          <div>
+            <div class="big" id="banner-name">Pick your location</div>
+            <div class="sm" id="banner-sm">Your traffic exits here — invisible to everyone else.</div>
+          </div>
+        </div>
+      </div>
+      <div class="server-panel">
+        <div class="server-list" id="server-list"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== WHAT IS A VPN ===================== -->
+<section class="band band--ink" id="what" data-screen-label="What is a VPN">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">What is a VPN?</span>
+      <h2>Think of it as a secret tunnel for your internet.</h2>
+      <p>Without one, every site, app, and network sees where you are and what you do. QUBE wraps it all in an encrypted tunnel — here's the short version.</p>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step__num">1</div>
+        <h3>You tap connect</h3>
+        <p>QUBE opens an encrypted tunnel between your device and one of our servers — no setup, no jargon.</p>
+      </div>
+      <div class="step">
+        <div class="step__num">2</div>
+        <h3>Your traffic goes incognito</h3>
+        <p>Your real IP and location disappear. Snoops, networks, and trackers see the cube, not you.</p>
+      </div>
+      <div class="step">
+        <div class="step__num">3</div>
+        <h3>You browse as a local</h3>
+        <p>Pop out in another country to stream, shop, and read the open internet — wherever you are.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PRICING ===================== -->
+<section class="band" id="pricing" data-screen-label="Pricing">
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="eyebrow">Plans</span>
+      <h2>Simple pricing. Cancel whenever.</h2>
+      <p>Every plan is the full QUBE — all servers, all features, 5 devices. Pick how long you want to save.</p>
+    </div>
+    <div style="text-align:center">
+      <div class="price-toggle" id="price-toggle">
+        <button data-cycle="month" class="active">Monthly</button>
+        <button data-cycle="year">Yearly<span class="save">-55%</span></button>
+      </div>
+    </div>
+    <div class="price-grid" style="margin-top:30px">
+      <div class="plan">
+        <h3>Starter</h3>
+        <div class="plan__price"><span class="cur">$</span><span class="amt" data-price-month="9.99" data-price-year="4.49">9.99</span><span class="per">/mo</span></div>
+        <div class="plan__bill" data-bill="">Billed monthly</div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="var(--accent)" stroke="var(--line)" stroke-width="1.6"></circle><path d="M8 12l2.6 2.6L16 9" stroke="var(--accent-deep)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>All 120+ locations</li>
+          <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="var(--accent)" stroke="var(--line)" stroke-width="1.6"></circle><path d="M8 12l2.6 2.6L16 9" stroke="var(--accent-deep)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>5 devices at once</li>
+          <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="var(--accent)" stroke="var(--line)" stroke-width="1.6"></circle><path d="M8 12l2.6 2.6L16 9" stroke="var(--accent-deep)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>No-logs, kill switch</li>
+        </ul>
+        <a class="btn" href="#">Start trial</a>
+      </div>
+      <div class="plan plan--best">
+        <div class="plan__tag">Most popular</div>
+        <h3>Cube+</h3>
+        <div class="plan__price"><span class="cur">$</span><span class="amt" data-price-month="7.99" data-price-year="3.49">7.99</span><span class="per">/mo</span></div>
+        <div class="plan__bill" data-bill="">Billed monthly</div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="var(--accent)" stroke="var(--line)" stroke-width="1.6"></circle><path d="M8 12l2.6 2.6L16 9" stroke="var(--accent-deep)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>Everything in Starter</li>
+          <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="var(--accent)" stroke="var(--line)" stroke-width="1.6"></circle><path d="M8 12l2.6 2.6L16 9" stroke="var(--accent-deep)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>Streaming-optimized servers</li>
+          <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="var(--accent)" stroke="var(--line)" stroke-width="1.6"></circle><path d="M8 12l2.6 2.6L16 9" stroke="var(--accent-deep)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>Priority support</li>
+        </ul>
+        <a class="btn btn--primary" href="#">Start trial</a>
+      </div>
+      <div class="plan">
+        <h3>Crew</h3>
+        <div class="plan__price"><span class="cur">$</span><span class="amt" data-price-month="14.99" data-price-year="6.99">14.99</span><span class="per">/mo</span></div>
+        <div class="plan__bill" data-bill="">Billed monthly</div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="var(--accent)" stroke="var(--line)" stroke-width="1.6"></circle><path d="M8 12l2.6 2.6L16 9" stroke="var(--accent-deep)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>Everything in Cube+</li>
+          <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="var(--accent)" stroke="var(--line)" stroke-width="1.6"></circle><path d="M8 12l2.6 2.6L16 9" stroke="var(--accent-deep)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>Up to 10 devices</li>
+          <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="var(--accent)" stroke="var(--line)" stroke-width="1.6"></circle><path d="M8 12l2.6 2.6L16 9" stroke="var(--accent-deep)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>Dedicated IP option</li>
+        </ul>
+        <a class="btn" href="#">Start trial</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== APPS ===================== -->
+<section class="band band--cream" id="apps" data-screen-label="Apps">
+  <div class="wrap apps">
+    <div>
+      <span class="eyebrow">Get the apps</span>
+      <h2 style="font-size:42px;margin-top:14px">Download the cube. Tap once. Done.</h2>
+      <p style="color:var(--ink-soft);margin-top:16px;font-size:19px;max-width:28em">Native apps for every platform, plus a browser extension. Sign in once and your protection follows you everywhere.</p>
+      <div class="store-row">
+        <button class="store-btn"><svg viewBox="0 0 24 24" fill="var(--ink)"><path d="M16.5 1.4c.1 1-.3 2-.9 2.8-.7.8-1.7 1.4-2.7 1.3-.1-1 .4-2 1-2.7.6-.8 1.7-1.3 2.6-1.4zM19 17.3c-.5 1.1-.7 1.6-1.3 2.6-.9 1.4-2.1 3.1-3.6 3.1-1.4 0-1.7-.9-3.6-.9-1.8 0-2.2.9-3.5.9-1.5 0-2.7-1.6-3.6-2.9C1 17.9 0 14 1.2 11.3c.8-1.9 2.4-3.1 4-3.1 1.5 0 2.4.9 3.6.9 1.2 0 1.9-.9 3.6-.9 1.4 0 2.9.8 3.9 2.1-3.4 1.9-2.8 6.7.7 7z"></path></svg><span class="t"><small>Download on the</small><b>App Store</b></span></button>
+        <button class="store-btn"><svg viewBox="0 0 24 24"><path d="M3.6 2.2l10.7 10-2.9 2.9L3.6 2.2z" fill="var(--accent)"></path><path d="M3.6 21.8l7.8-12.9 2.9 2.9-10.7 10z" fill="var(--cyan)"></path><path d="M17.4 9.3l3 1.7c1.2.7 1.2 1.9 0 2.6l-3 1.7-3.1-3 3.1-3z" fill="var(--yellow)"></path><path d="M3.6 2.2l13.8 7.1-3.1 3L3.6 2.2z" fill="var(--lime)"></path></svg><span class="t"><small>Get it on</small><b>Google Play</b></span></button>
+        <button class="store-btn"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="6" width="18" height="12" rx="2.5" stroke="var(--line)" stroke-width="1.9"></rect><path d="M3 10h18" stroke="var(--line)" stroke-width="1.9"></path></svg><span class="t"><small>Add to</small><b>Browser</b></span></button>
+      </div>
+    </div>
+    <div class="apps__art">
+      <div class="hero__backplate" style="inset:8%"></div>
+      <img src="assets/qube-hero-sticker-crop.png" alt="QUBE mascot" style="position:relative;z-index:2">
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FINAL CTA ===================== -->
+<section class="band band--ink" data-screen-label="CTA">
+  <div class="wrap cta-final">
+    <span class="eyebrow">Ready when you are</span>
+    <h2 style="margin-top:16px">Take back your route.</h2>
+    <p>Start your 7-day free trial today. No logs, no lock-in, no nonsense — just one friendly cube watching your back.</p>
+    <a class="btn btn--primary btn--lg" href="#">Get QUBE VPN now</a>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div class="footer__col footer__brand">
+        <a class="logo" href="#top">
+          <span class="logo__cube" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2l8 4.5v9L12 22l-8-6.5v-9L12 2z" stroke="#0C3D22" stroke-width="2" stroke-linejoin="round"></path><path d="M4 6.5L12 11l8-4.5M12 11v11" stroke="#0C3D22" stroke-width="2" stroke-linejoin="round"></path></svg></span>
+          <span class="logo__word">QUBE</span>
+        </a>
+        <p>Your content. Your internet. Your route. A playful, privacy-first VPN for streaming, travel, and everyday online freedom.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Product</h4>
+        <a href="#features">Features</a><a href="#servers">Servers</a><a href="#pricing">Pricing</a><a href="#apps">Apps</a>
+      </div>
+      <div class="footer__col">
+        <h4>Learn</h4>
+        <a href="#what">What is a VPN?</a><a href="#">Streaming</a><a href="#">Travel guide</a><a href="#">Blog</a>
+      </div>
+      <div class="footer__col">
+        <h4>Company</h4>
+        <a href="#">About</a><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Support</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 QUBE VPN. Built for humans who like their privacy playful.</span>
+      <span>Made with 🟩 and good intentions.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============================ SCRIPTS ============================ -->
+<script src="script.js" defer></script>
+</body></html>
